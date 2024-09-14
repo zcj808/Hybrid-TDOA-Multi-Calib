@@ -10,9 +10,13 @@ Link in OneDrive: https://1drv.ms/f/s!AilTdY3K-LzJgbdgoZZSl9-d8883ow?e=gFOias. A
 
 ## How to implement simulations
 - `sim_main.m` achieves simulations in paper.
-  1. **Simulations Set Up** generate data of simulation scenario under three levels of TDOA noises, DOA noises, three sound source trajectories. In each TDOA noise and DOA noise and specific trajectory, Monte Carlo performs `nums' times. If you wanna **Quick Simulations**, set `nums' to smaller, such as five.
-  2. After running first step, you can run **Zhang's Simulation** in `sim_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py'. Note that declare category='Simulation'.
+  1. **Simulations Set Up** generate data of simulation scenario under three levels of TDOA noises, DOA noises, three sound source trajectories. In each TDOA noise and DOA noise and specific trajectory, Monte Carlo performs `nums` times. If you wanna **Quick Simulations**, set `nums` to smaller, such as five.
+  2. After running first step, you can run **Zhang's Simulation** in `sim_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py`. Note that declare `category='Simulation'`.
+  3. Finally, just run the bottom part in `sim_main.m`. Then, IVE and final results of our method and wang's method will be shown.
 - `real_main.m` achieves real-world experiments in paper.
+  1. Download audio shared in this link and put audio into folder named `audio`.
+  1. The first part and second part in `real_main.m` generate TDOA-S and TDOA-M measurements, and real-world experiment data respectively. run `SRP-PHAT-DOA.py` to compute DOA.
+  2.  Subsquencely, run the third part in `real_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py`. Note that declare `category='Simulation'`.
 
 ## Details
 - My email: 12332644@mail.sustech.edu.cn.
