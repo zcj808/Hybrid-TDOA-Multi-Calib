@@ -10,8 +10,8 @@ Link in OneDrive: https://1drv.ms/f/s!AilTdY3K-LzJgbdgoZZSl9-d8883ow?e=gFOias. A
 
 ## How to implement simulations
 - `sim_main.m` achieves simulations in paper.
-  1. `Simulations Set Up' generate data of simulation scenario under three levels of TDOA noises, DOA noises, three sound source trajectories. In each TDOA noise and DOA noise and specific trajectory, Monte Carlo performs `nums' times. If you wanna **Quick Simulations**, set `nums' to smaller, such as five.
-  2. After running first step, you can run `Zhang's Simulation' in `sim_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py'. Note that declare category='Simulation'.
+  1. **Simulations Set Up** generate data of simulation scenario under three levels of TDOA noises, DOA noises, three sound source trajectories. In each TDOA noise and DOA noise and specific trajectory, Monte Carlo performs `nums' times. If you wanna **Quick Simulations**, set `nums' to smaller, such as five.
+  2. After running first step, you can run **Zhang's Simulation** in `sim_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py'. Note that declare category='Simulation'.
 - `real_main.m` achieves real-world experiments in paper.
 
 ## Details
