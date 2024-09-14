@@ -8,7 +8,7 @@ The full video with high quality is avaliable at https://youtu.be/pmVgjJdjW2E.
 ## Audio Accessment
 Link in OneDrive: https://1drv.ms/f/s!AilTdY3K-LzJgbdgoZZSl9-d8883ow?e=gFOias. After download it, place folder named "Audio" at the same level as folder "displacement". If the link has expired, send me an email to remind me.
 
-## How to implement simulations
+## How to Implement
 - `sim_main.m` achieves simulations in paper.
   1. **Simulations Set Up** generate data of simulation scenario under three levels of TDOA noises, DOA noises, three sound source trajectories. In each TDOA noise and DOA noise and specific trajectory, Monte Carlo performs `nums` times. If you wanna **Quick Simulations**, set `nums` to smaller, such as five.
   2. After running first step, you can run **Zhang's Simulation** in `sim_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py`. Note that declare `category='Simulation'`.
