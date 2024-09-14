@@ -15,8 +15,8 @@ Link in OneDrive: https://1drv.ms/f/s!AilTdY3K-LzJgbdgoZZSl9-d8883ow?e=gFOias. A
   3. Finally, just run the bottom part in `sim_main.m`. Then, IVE and final results of our method and wang's method will be shown.
 - `real_main.m` achieves real-world experiments in paper.
   1. Download audio shared in this link and put audio into folder named `audio`.
-  1. The first part and second part in `real_main.m` generate TDOA-S and TDOA-M measurements, and real-world experiment data respectively. run `SRP-PHAT-DOA.py` to compute DOA.
-  2.  Subsquencely, run the third part in `real_main.m` and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py`. Note that declare `category='Simulation'`.
-
+  2. The first part and second part in `real_main.m` generate TDOA-S and TDOA-M measurements, and real-world experiment data respectively. run `SRP-PHAT-DOA.py` to compute DOA.
+  3. Subsquencely, run the third part in `real_main.m` that is my approach and Wang's approach in file named `Multi_Mic_Arrays_Calibration.py`. Note that declare `category='Real_world'`.
+  4. Finally, run the final part of `real_main.m` to output the IVE and final estimation results.
 ## Details
 - My email: 12332644@mail.sustech.edu.cn.
