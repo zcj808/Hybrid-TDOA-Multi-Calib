@@ -369,8 +369,8 @@ if __name__ == "__main__":
     for i in range(exp_num):
         exp_id=i+1
         print(f"exp_id: {exp_id}.")
-        audio_path=f"Arr-Hybrid-TDOA-Calib\\data\\{exp_id}\\doa_audio.mat" # filtered audio
-        audio_id_path=f"Arr-Hybrid-TDOA-Calib\\data\\{exp_id}\\doa_audio_id.mat"
+        audio_path=f"data\\{exp_id}\\doa_audio.mat" # filtered audio
+        audio_id_path=f"data\\{exp_id}\\doa_audio_id.mat"
         doa_audios = sio.loadmat(audio_path)
         audio_ids = sio.loadmat(audio_id_path)
         doa_audios = doa_audios['arr_data'][0]
