@@ -4,7 +4,7 @@ clc7
 tdoa_sigmas=[5e-5,1e-4,5e-4]; % TDOA noise sigma
 doa_sigmas=[5,10,15];  % unit: degree, 5/10/15
 arr_M=[6,6,6,6,6]; % Mic. Number
-nums=5;
+nums=200;
 for doa_i=1:3
     for tdoa_i=1:3
         g_list=[];
